@@ -1,0 +1,30 @@
+<form onSubmit={handleSubmit}>
+    <div className="form-group">
+        <label>ID</label>
+        <input type="text" label="ID" className="ID" onChange={(e)=>inputsHandler(e)}>
+        </input>
+    </div>
+    <div className="form-group">
+        <label>Name</label>
+        <input type="text" label="name" name="name" onChange={(e)=>inputsHandler(e)}>
+        </input>
+    </div>
+    <div className="form-group">
+        <label>DOB</label>
+        <input type="date" label="dob" name="dob" onChange={(e)=>inputsHandler(e)}>
+        </input>
+    </div>
+    <div className="form-group">
+        <label>Education</label>
+        <input type="text" label="Education" name="education" onChange={(e)=>inputsHandler(e)}>
+        </input>
+    </div>
+    <div className="form-group">
+        <label>Profile</label>
+        <input type="file" label="Image" name="myFile" accept=".jpeg, .png, .jpg" onChange={(e)=>
+        handleFileUpload(e)}></input>
+    </div>
+
+    <button>Submit</button>
+</form>
+</div>
